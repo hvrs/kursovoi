@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">praktikaMobile</string>
+    
+    #Шапочные текста страниц входа
+    <string name="registration">Регистрация</string>
+    <string name="authorization">Авторизация</string>
+    <string name="passRecovery">Восстановление пароля</string>
+    
+    #Авторизационные и регистрационные мероприятия
+    <string name="email_txt">Email</string>
+    <string name="login_txt">Login</string>
+    <string name="password_txt">Password</string>
+    <string name="already_register">Уже зарегистрированы?</string>
+    <string name="enter">Войти!</string>
+    <string name="enter_txt_btn">Войти</string>
+    <string name="not_account">Нет учетной записи?</string>
+    <string name="go_register">Зарегистрироваться!</string>
+    <string name="recover_password">Восстановить пароль</string>
+    <string name="enter_code_recover">Введите код</string>
+    <string name="send_txt">Введите код</string>
+    <string name="go_new_password">Введите новый пароль</string>
+
+    #Текста во внутренней части приложения
+    <string name="my_photos">Мои фото</string>
+    <string name="settings_txt">Настройки</string>
+    <string name="save_txt">Сохранить</string>
+    <string name="change">Изменить</string>
+    <string name="name_user">Имя</string>
+    <string name="surname_user">Фамилия</string>
+    <string name="bday_user">Дата рождения</string>
+    <string name="favorite_txt">Избранное</string>
+    <string name="go_acq">Давайте познакомимся!</string>
+    <string name="add_txt">Добавить</string>
+    <string name="letgo">Продолжить</string>
+    <string name="accept_txt">Подтвердить</string>
+    <string name="photo_info">Информация о фото</string>
+    <string name="create_date">Дата создания</string>
+    <string name="photo_location">Местоположение:</string>
+    <string name="delete_photo_txt">Удалить фото</string>
+</resources>

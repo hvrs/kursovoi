@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".registrationPage">
+
+    <TextView android:id="@+id/register"
+        android:fontFamily="@font/nunito_medium"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="38dp"
+        android:layout_width="431dp"
+        android:layout_height="77dp"
+        android:text="@string/registration"
+        />
+    <TextView android:id="@+id/email"
+        android:fontFamily="@font/nunito_medium"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="144dp"
+        android:layout_width="178.15dp"
+        android:layout_height="30.5dp"
+        android:text="@string/email_txt"
+        />
+    <TextView android:id="@+id/login"
+        android:fontFamily="@font/nunito_medium"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="234dp"
+        android:layout_width="178.15dp"
+        android:layout_height="30.5dp"
+        android:text="@string/login_txt"
+        />
+    <TextView android:id="@+id/password"
+        android:fontFamily="@font/nunito_medium"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="324dp"
+        android:layout_width="178.15dp"
+        android:layout_height="30.5dp"
+        android:text="@string/password_txt"
+        />
+    <EditText android:id="@+id/edit_text_email"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="164dp"
+        android:layout_width="362dp"
+        android:layout_height="49dp"
+        android:background="@drawable/input_field"/>
+    
+    <EditText android:id="@+id/edit_text_login"
+        android:background="@drawable/input_field"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="254dp"
+        android:layout_width="362dp"
+        android:layout_height="49dp"/>
+    <EditText
+        android:id="@+id/edit_text_password"
+        android:background="@drawable/input_field"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="344dp"
+        android:layout_width="362dp"
+        android:layout_height="49dp"
+        android:password="true"
+        />
+    <ImageView android:id="@+id/vector"
+        android:src="@drawable/eye"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="354dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <TextView android:id="@+id/already_register"
+        android:fontFamily="@font/nunito_medium"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/button_color_1"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="413dp"
+        android:layout_width="375dp"
+        android:layout_height="31dp"
+        android:text="@string/already_register"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="452dp"
+        android:background="@drawable/btn_register"
+        android:fontFamily="@font/nunito_medium"
+        android:text="@string/registration"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView android:id="@+id/error_messages"
+        android:fontFamily="@font/nunito_medium"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="530dp"
+        android:layout_width="375dp"
+        android:layout_height="31dp"
+        android:text="Ошибка"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>
+
+
+

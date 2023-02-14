@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:fontFamily="@font/nunito_medium"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="38dp"
+        android:layout_width="427dp"
+        android:layout_height="77dp"
+        android:text="@string/authorization"
+        />
+    <TextView android:id="@+id/login"
+        android:fontFamily="@font/nunito_medium"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="186dp"
+        android:layout_width="178.15dp"
+        android:layout_height="30.5dp"
+        android:text="@string/login_txt"
+        />
+    <TextView android:id="@+id/password"
+        android:fontFamily="@font/nunito_medium"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="276dp"
+        android:layout_width="155.5dp"
+        android:layout_height="30.5dp"
+        android:text="@string/password_txt"
+        />
+    <EditText
+        android:id="@+id/tb_login"
+        android:background="@drawable/input_field"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="206dp"
+        android:layout_width="362dp"
+        android:layout_height="49dp"/>
+    <EditText
+        android:id="@+id/tb_password"
+        android:background="@drawable/input_field"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="296dp"
+        android:layout_width="362dp"
+        android:layout_height="49dp" />
+    <TextView android:id="@+id/dont_have_acc"
+        android:fontFamily="@font/nunito_medium"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/button_color_1"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="450dp"
+        android:layout_width="375dp"
+        android:layout_height="31dp"
+        android:text="@string/already_register"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_enter"
+        android:background="@drawable/btn_register"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="494dp"
+        android:layout_width="362dp"
+        android:layout_height="60dp"
+        android:text="@string/enter_txt_btn"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/recover_passw"
+        android:background="@drawable/btn_register"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="575dp"
+        android:layout_width="362dp"
+        android:layout_height="60dp"
+        android:text="@string/recover_password"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>
