@@ -71,7 +71,7 @@
         android:layout_height="60dp"
         android:text="@string/enter_txt_btn"
         android:textColor="@color/white"
-        android:textSize="16sp"
+        android:textSize="14sp"
         />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/recover_passw"
@@ -82,7 +82,7 @@
         android:layout_height="60dp"
         android:text="@string/recover_password"
         android:textColor="@color/white"
-        android:textSize="16sp"
+        android:textSize="14sp"
         />
 
 

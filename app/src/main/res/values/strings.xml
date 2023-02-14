@@ -19,6 +19,7 @@
     <string name="enter_code_recover">Введите код</string>
     <string name="send_txt">Введите код</string>
     <string name="go_new_password">Введите новый пароль</string>
+    <string name="sendCode">Отправить</string>
 
     #Текста во внутренней части приложения
     <string name="my_photos">Мои фото</string>

@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PraktikaMobile"
         tools:targetApi="31">
+        <activity android:name=".resetCodePage"/>
+        <activity android:name=".resetPasswordPage"/>
         <activity android:name=".authorizationPage"/>
         <activity
             android:name=".registrationPage"

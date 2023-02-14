@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:fontFamily="@font/nunito_medium"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="38dp"
+        android:layout_width="431dp"
+        android:layout_height="77dp"
+        android:text="@string/passRecovery"
+        />
+
+    <ImageButton android:id="@+id/btn_back"
+        android:background="@drawable/btn_back_dark"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="60dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+    <TextView
+        android:fontFamily="@font/nunito_medium"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="101dp"
+        android:layout_width="374dp"
+        android:layout_height="72.5dp"
+        android:text="@string/enter_code_recover"
+        />
+    <EditText
+        android:id="@+id/tb_recovers_code"
+        android:background="@drawable/input_field"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="263dp"
+        android:layout_width="362dp"
+        android:layout_height="70dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sendcode"
+        android:background="@drawable/btn_register"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="496dp"
+        android:layout_width="362dp"
+        android:layout_height="60dp"
+        android:text="@string/sendCode"
+        android:fontFamily="@font/nunito_medium"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>
