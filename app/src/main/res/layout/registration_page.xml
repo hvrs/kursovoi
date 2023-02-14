@@ -54,14 +54,18 @@
         android:layout_marginTop="164dp"
         android:layout_width="362dp"
         android:layout_height="49dp"
-        android:background="@drawable/input_field"/>
+        android:background="@drawable/input_field"
+        android:paddingStart="15dp"
+        />
     
     <EditText android:id="@+id/edit_text_login"
         android:background="@drawable/input_field"
         android:layout_marginStart="25dp"
         android:layout_marginTop="254dp"
         android:layout_width="362dp"
-        android:layout_height="49dp"/>
+        android:layout_height="49dp"
+        android:paddingStart="15dp"
+        />
     <EditText
         android:id="@+id/edit_text_password"
         android:background="@drawable/input_field"
@@ -69,6 +73,7 @@
         android:layout_marginTop="344dp"
         android:layout_width="362dp"
         android:layout_height="49dp"
+        android:paddingStart="15dp"
         android:password="true"
         />
     <ImageView android:id="@+id/vector"

@@ -40,14 +40,18 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="206dp"
         android:layout_width="362dp"
-        android:layout_height="49dp"/>
+        android:layout_height="49dp"
+        android:paddingStart="15dp"
+        />
     <EditText
         android:id="@+id/tb_password"
         android:background="@drawable/input_field"
         android:layout_marginStart="25dp"
         android:layout_marginTop="296dp"
         android:layout_width="362dp"
-        android:layout_height="49dp" />
+        android:layout_height="49dp"
+        android:paddingStart="15dp"
+        />
     <TextView android:id="@+id/dont_have_acc"
         android:fontFamily="@font/nunito_medium"
         android:textStyle="bold"
