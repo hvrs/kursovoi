@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:fontFamily="@font/nunito_medium"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="0dp"
+        android:layout_width="425dp"
+        android:layout_height="76.5dp"
+        android:text="@string/go_acq"
+        />
+    <ImageView android:id="@+id/back"
+        android:src="@drawable/btn_back"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="22dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+    <TextView
+        android:fontFamily="@font/nunito_medium"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="109dp"
+        android:layout_width="375dp"
+        android:layout_height="31dp"
+        android:text="@string/name_user"
+        />
+    <TextView
+        android:fontFamily="@font/nunito_medium"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="207dp"
+        android:layout_width="375dp"
+        android:layout_height="31dp"
+        android:text="@string/surname_user"
+        />
+    <TextView
+        android:fontFamily="@font/nunito_medium"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="305dp"
+        android:layout_width="375dp"
+        android:layout_height="31dp"
+        android:text="@string/bday_user"
+        />
+
+    <EditText
+        android:id="@+id/tb_name"
+        android:background="@drawable/input_field"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="136dp"
+        android:layout_width="362dp"
+        android:layout_height="49dp"
+        android:textAlignment="center"
+        />
+    <EditText
+        android:id="@+id/tb_surname"
+        android:background="@drawable/input_field"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="234dp"
+        android:layout_width="362dp"
+        android:layout_height="49dp"
+        android:textAlignment="center"
+        />
+    <EditText
+        android:id="@+id/tb_bday"
+        android:background="@drawable/input_field"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="332dp"
+        android:layout_width="362dp"
+        android:layout_height="49dp"
+        android:textAlignment="center"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/set_photo"
+        android:background="@drawable/input_photo"
+        android:alpha="0.75"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="416dp"
+        android:layout_width="155dp"
+        android:layout_height="155dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/rect"
+        android:background="@drawable/btn_add"
+        android:layout_marginStart="261dp"
+        android:layout_marginTop="477dp"
+        android:layout_width="125.89dp"
+        android:layout_height="41.6dp"
+        android:text="@string/add_txt"
+        android:textColor="@color/white"
+        android:fontFamily="@font/nunito_medium"
+        android:textSize="12dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/__link_mainpage__btn_reg"
+        android:background="@drawable/btn_register"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="615dp"
+        android:layout_width="362dp"
+        android:layout_height="60dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/nunito_medium"
+        android:textSize="14dp"
+        android:text="@string/letgo"
+        />
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

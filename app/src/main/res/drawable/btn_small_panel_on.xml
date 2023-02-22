@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <size android:width="56.9dp"/>
+            <size android:height="49.06dp"/>
+            <gradient android:angle="90" android:endColor="@color/end_button_color" android:startColor="@color/button_color_1"/>
+            <corners android:radius="14dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle" >
+            <gradient
+                android:angle="180"
+                android:centerColor="#00FF0000"
+                android:centerX="0.7"
+                android:endColor="#2E3759"
+                android:startColor="#00FF0000" />
+
+            <corners android:radius="14dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle" >
+            <gradient
+                android:angle="360"
+                android:centerColor="#00FF0000"
+                android:centerX="0.7"
+                android:endColor="#2E3759"
+                android:startColor="#00FF0000" />
+
+            <corners android:radius="14dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle" >
+            <gradient
+                android:angle="-90"
+                android:centerColor="#00FF0000"
+                android:centerY="0.155"
+                android:endColor="#00FF0000"
+                android:startColor="#2E3759"
+                android:type="linear" />
+
+            <corners android:radius="14dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle" >
+            <gradient
+                android:angle="90"
+                android:centerColor="#00FF0000"
+                android:centerY="0.155"
+                android:endColor="#00FF0000"
+                android:startColor="#2E3759"
+                android:type="linear"
+
+                />
+
+            <corners android:radius="14dp" />
+        </shape>
+    </item>
+</layer-list>
