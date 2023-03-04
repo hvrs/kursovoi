@@ -76,6 +76,7 @@
         android:text="@string/enter_txt_btn"
         android:textColor="@color/white"
         android:textSize="14sp"
+        android:onClick="toNewActivity"
         />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/recover_passw"

@@ -106,7 +106,9 @@
         android:fontFamily="@font/nunito_medium"
         android:text="@string/registration"
         android:textColor="@color/white"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:onClick="toNewActivity"
+        />
 
     <TextView android:id="@+id/error_messages"
         android:fontFamily="@font/nunito_medium"

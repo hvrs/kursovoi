@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PraktikaMobile"
         tools:targetApi="31">
+        <activity android:name=".settingPage"/>
         <activity android:name=".startSettingsPage"/>
         <activity android:name=".resetPassword_newp"/>
         <activity android:name=".resetCodePage"/>

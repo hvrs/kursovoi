@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:elevation="20dp"
+        android:background="@drawable/top_panel"
+        android:fontFamily="@font/nunito_medium"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_width="433dp"
+        android:layout_height="76.5dp"
+        android:text="@string/settings_txt"
+        />
+    <ImageButton android:id="@+id/iconsax_bold_arrowleft"
+        android:background="@drawable/btn_back"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="20dp"
+        />
+    <TextView
+        android:fontFamily="@font/nunito_medium"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="109dp"
+        android:layout_width="375dp"
+        android:layout_height="31dp"
+        android:text="@string/name_user"
+        />
+    <TextView
+        android:fontFamily="@font/nunito_medium"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="207dp"
+        android:layout_width="375dp"
+        android:layout_height="31dp"
+        android:text="@string/surname_user"
+        />
+    <TextView
+        android:fontFamily="@font/nunito_medium"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="305dp"
+        android:layout_width="375dp"
+        android:layout_height="31dp"
+        android:text="@string/bday_user"
+        />
+
+    <EditText  android:id="@+id/tb_name"
+        android:background="@drawable/input_field"
+        android:alpha="0.69999998807907"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="136dp"
+        android:layout_width="362dp"
+        android:layout_height="49dp" />
+    <EditText
+        android:id="@+id/tb_surname"
+        android:background="@drawable/input_field"
+        android:alpha="0.69999998807907"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="234dp"
+        android:layout_width="362dp"
+        android:layout_height="49dp" />
+    <EditText
+        android:id="@+id/tb_bday"
+        android:background="@drawable/input_field"
+        android:alpha="0.69999998807907"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="332dp"
+        android:layout_width="362dp"
+        android:layout_height="49dp" />
+
+    <ImageButton android:id="@+id/tb_photo_user"
+        android:src="@drawable/input_photo"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="410dp"
+        android:layout_width="155dp"
+        android:layout_height="155dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/group_21"
+        android:background="@drawable/btn_add"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="661dp"
+        android:layout_width="125.89dp"
+        android:layout_height="41.6dp"
+        android:fontFamily="@font/nunito_medium"
+        android:text="@string/save_txt"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+    <!--
+        <View
+android:id="@+id/topPanel"
+android:background="@drawable/top_panel"
+android:layout_marginStart="0dp"
+android:layout_marginTop="0dp"
+android:layout_width="433dp"
+android:layout_height="66dp"
+android:elevation="25dp"
+
+    />
+    -->
