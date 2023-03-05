@@ -69,7 +69,9 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="136dp"
         android:layout_width="362dp"
-        android:layout_height="49dp" />
+        android:layout_height="49dp"
+        android:paddingStart="15dp"
+        />
     <EditText
         android:id="@+id/tb_surname"
         android:background="@drawable/input_field"
@@ -77,7 +79,9 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="234dp"
         android:layout_width="362dp"
-        android:layout_height="49dp" />
+        android:layout_height="49dp"
+        android:paddingStart="15dp"
+        />
     <EditText
         android:id="@+id/tb_bday"
         android:background="@drawable/input_field"
@@ -85,7 +89,10 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="332dp"
         android:layout_width="362dp"
-        android:layout_height="49dp" />
+        android:layout_height="49dp"
+        android:inputType="date"
+        android:gravity="center"
+        />
 
     <ImageButton android:id="@+id/tb_photo_user"
         android:src="@drawable/input_photo"
@@ -107,6 +114,69 @@
         android:textStyle="bold"
         android:textSize="12dp"
         />
+
+
+
+    <ImageButton
+        android:id="@+id/btn_cameraStart"
+        android:layout_width="126.84dp"
+        android:layout_height="49.06dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="732dp"
+        android:background="@drawable/knopkacamera"
+        android:elevation="20dp"/>
+    <ImageButton
+        android:id="@+id/btn_settings"
+        android:background="@drawable/knopkasettingson"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="732dp"
+        android:layout_width="56.9dp"
+        android:layout_height="49.06dp"
+        android:elevation="20dp"
+        />
+    <ImageButton
+        android:id="@+id/btn_gallery"
+        android:background="@drawable/knopkagallery"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="733dp"
+        android:layout_width="56.9dp"
+        android:layout_height="49.06dp"
+        android:elevation="20dp"
+        />
+    <ImageButton
+        android:id="@+id/btn_settingson"
+        android:background="@drawable/knopkatop"
+        android:layout_marginStart="316dp"
+        android:layout_marginTop="733dp"
+        android:layout_width="56.9dp"
+        android:layout_height="49.06dp"
+        android:elevation="20dp"
+        />
+    <!--Сделать четкие кнопки, в плане четкости нне типа крутой пацан и крутые кнопки, а чтобы они ну нормальные были
+    кароче, типа четкие без мути
+    -->
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"> <!--Кусок говна ваш андройд студио, если я не могу поместить один предмет поверх
+        другого без ебучих костылей-->
+        <View
+            android:id="@+id/buttonPanel"
+            android:background="@drawable/buttons_panel"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="716dp"
+            android:layout_width="358dp"
+            android:layout_height="81dp"
+            android:elevation="15dp"
+            />
+    </FrameLayout>
+
+
+
+
 
 
 

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:fontFamily="@font/nunito_medium"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_width="433dp"
+        android:layout_height="76.5dp"
+        android:text="@string/photo_info"
+        android:background="@drawable/top_panel"
+        android:elevation="20dp"
+        />
+    <ImageButton android:id="@+id/btn_back"
+        android:background="@drawable/btn_back"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="20dp"
+        />
+    <ImageButton  android:id="@+id/rectangle_6"
+        android:background="@drawable/input_photo"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="111dp"
+        android:layout_width="362dp"
+        android:layout_height="332dp" />
+
+
+
+</RelativeLayout>
