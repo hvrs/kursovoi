@@ -153,7 +153,7 @@
         android:elevation="20dp"
         />
     <ImageButton
-        android:id="@+id/btn_settingson"
+        android:id="@+id/btn_top"
         android:background="@drawable/knopkatop"
         android:layout_marginStart="316dp"
         android:layout_marginTop="733dp"
@@ -179,6 +179,7 @@
             android:layout_marginTop="716dp"
             android:layout_width="358dp"
             android:layout_height="81dp"
+            android:layout_centerHorizontal="true"
             android:elevation="15dp"
             />
     </FrameLayout>

@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PraktikaMobile"
         tools:targetApi="31">
+        <activity android:name=".favoritePage"/>
+        <activity android:name=".mainPage"/>
         <activity android:name=".photoInfoPage"/>
         <activity android:name=".settingPage"/>
         <activity android:name=".startSettingsPage"/>

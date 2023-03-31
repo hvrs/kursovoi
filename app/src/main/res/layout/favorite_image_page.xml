@@ -20,7 +20,7 @@
         android:layout_marginTop="0dp"
         android:layout_width="100dp"
         android:layout_height="66dp"
-        android:text="@string/my_photos"
+        android:text="@string/favorite_txt"
         android:elevation="20dp"
         android:layout_centerHorizontal="true"
         />
@@ -52,7 +52,7 @@
         android:elevation="20dp"/>
     <ImageButton
         android:id="@+id/btn_top"
-        android:background="@drawable/knopkatop"
+        android:background="@drawable/favoriteon"
         android:layout_marginStart="319dp"
         android:layout_marginTop="733dp"
         android:layout_width="56.9dp"
@@ -61,7 +61,7 @@
         />
     <ImageButton
         android:id="@+id/btn_gallery"
-        android:background="@drawable/galleryon"
+        android:background="@drawable/knopkagallery"
         android:layout_marginStart="251dp"
         android:layout_marginTop="733dp"
         android:layout_width="56.9dp"
@@ -77,19 +77,4 @@
         android:layout_height="49.06dp"
         android:elevation="20dp"
         />
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TableLayout
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent">
-
-        </TableLayout>
-    </ScrollView>
-
-
-
-
-
 </RelativeLayout>
