@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/delete_button_color"/>
+            <size android:height="37.44dp"/>
+            <size android:width="362dp"/>
+            <corners android:radius="9dp"/>
+        </shape>
+    </item>
+</selector>

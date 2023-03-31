@@ -36,6 +36,6 @@
     <string name="accept_txt">Подтвердить</string>
     <string name="photo_info">Информация о фото</string>
     <string name="create_date">Дата создания</string>
-    <string name="photo_location">Местоположение:</string>
+    <string name="photo_location">Местоположение</string>
     <string name="delete_photo_txt">Удалить фото</string>
 </resources>
