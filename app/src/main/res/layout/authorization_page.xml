@@ -12,6 +12,7 @@
         android:layout_marginTop="38dp"
         android:layout_width="427dp"
         android:layout_height="77dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/authorization"
         />
     <TextView android:id="@+id/login"
@@ -39,6 +40,7 @@
         android:background="@drawable/input_field"
         android:layout_marginStart="25dp"
         android:layout_marginTop="206dp"
+        android:layout_centerHorizontal="true"
         android:layout_width="362dp"
         android:layout_height="49dp"
         android:paddingStart="15dp"
@@ -47,6 +49,7 @@
         android:id="@+id/tb_password"
         android:background="@drawable/input_field"
         android:layout_marginStart="25dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="296dp"
         android:layout_width="362dp"
         android:layout_height="49dp"
@@ -64,6 +67,7 @@
         android:layout_width="375dp"
         android:layout_height="31dp"
         android:text="@string/already_register"
+        android:layout_centerHorizontal="true"
         />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -74,6 +78,7 @@
         android:layout_width="362dp"
         android:layout_height="60dp"
         android:text="@string/enter_txt_btn"
+        android:layout_centerHorizontal="true"
         android:textColor="@color/white"
         android:textSize="14sp"
         android:onClick="toNewActivity"
@@ -85,6 +90,7 @@
         android:layout_marginTop="575dp"
         android:layout_width="362dp"
         android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/recover_password"
         android:textColor="@color/white"
         android:textSize="14sp"

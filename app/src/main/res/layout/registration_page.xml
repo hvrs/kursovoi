@@ -18,6 +18,7 @@
         android:layout_width="431dp"
         android:layout_height="77dp"
         android:text="@string/registration"
+        android:layout_centerHorizontal="true"
         />
     <TextView android:id="@+id/email"
         android:fontFamily="@font/nunito_medium"
@@ -56,6 +57,7 @@
         android:layout_height="49dp"
         android:background="@drawable/input_field"
         android:paddingStart="15dp"
+        android:layout_centerHorizontal="true"
         />
     
     <EditText android:id="@+id/edit_text_login"
@@ -65,6 +67,7 @@
         android:layout_width="362dp"
         android:layout_height="49dp"
         android:paddingStart="15dp"
+        android:layout_centerHorizontal="true"
         />
     <EditText
         android:id="@+id/edit_text_password"
@@ -75,6 +78,7 @@
         android:layout_height="49dp"
         android:paddingStart="15dp"
         android:password="true"
+        android:layout_centerHorizontal="true"
         />
     <ImageView android:id="@+id/vector"
         android:src="@drawable/eye"
@@ -92,6 +96,7 @@
         android:layout_marginLeft="35dp"
         android:layout_marginTop="413dp"
         android:layout_width="375dp"
+        android:layout_centerHorizontal="true"
         android:layout_height="31dp"
         android:text="@string/already_register"
         />
@@ -107,6 +112,7 @@
         android:text="@string/registration"
         android:textColor="@color/white"
         android:textStyle="bold"
+        android:layout_centerHorizontal="true"
         android:onClick="toNewActivity"
         />
 
@@ -121,6 +127,7 @@
         android:layout_width="375dp"
         android:layout_height="31dp"
         android:text="Ошибка"
+        android:layout_centerHorizontal="true"
         android:visibility="invisible"
         />
 

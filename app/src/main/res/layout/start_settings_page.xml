@@ -13,6 +13,7 @@
         android:layout_marginTop="0dp"
         android:layout_width="425dp"
         android:layout_height="76.5dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/go_acq"
         />
     <ImageView android:id="@+id/back"
@@ -31,6 +32,7 @@
         android:layout_marginTop="109dp"
         android:layout_width="375dp"
         android:layout_height="31dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/name_user"
         />
     <TextView
@@ -43,6 +45,7 @@
         android:layout_marginTop="207dp"
         android:layout_width="375dp"
         android:layout_height="31dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/surname_user"
         />
     <TextView
@@ -55,6 +58,7 @@
         android:layout_marginTop="305dp"
         android:layout_width="375dp"
         android:layout_height="31dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/bday_user"
         />
 
@@ -66,6 +70,7 @@
         android:layout_width="362dp"
         android:layout_height="49dp"
         android:textAlignment="center"
+        android:layout_centerHorizontal="true"
         />
     <EditText
         android:id="@+id/tb_surname"
@@ -75,6 +80,7 @@
         android:layout_width="362dp"
         android:layout_height="49dp"
         android:textAlignment="center"
+        android:layout_centerHorizontal="true"
         />
     <EditText
         android:id="@+id/tb_bday"
@@ -84,6 +90,7 @@
         android:layout_width="362dp"
         android:layout_height="49dp"
         android:textAlignment="center"
+        android:layout_centerHorizontal="true"
         />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -99,7 +106,7 @@
         android:id="@+id/rect"
         android:background="@drawable/btn_add"
         android:layout_marginStart="261dp"
-        android:layout_marginTop="477dp"
+        android:layout_marginTop="475dp"
         android:layout_width="125.89dp"
         android:layout_height="41.6dp"
         android:text="@string/add_txt"
@@ -117,6 +124,7 @@
         android:textColor="@color/white"
         android:fontFamily="@font/nunito_medium"
         android:textSize="14dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/letgo"
         />
 

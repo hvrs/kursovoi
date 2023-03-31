@@ -16,6 +16,7 @@
         android:layout_marginTop="0dp"
         android:layout_width="433dp"
         android:layout_height="76.5dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/settings_txt"
         />
     <ImageButton android:id="@+id/iconsax_bold_arrowleft"
@@ -36,6 +37,7 @@
         android:layout_marginTop="109dp"
         android:layout_width="375dp"
         android:layout_height="31dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/name_user"
         />
     <TextView
@@ -48,6 +50,7 @@
         android:layout_marginTop="207dp"
         android:layout_width="375dp"
         android:layout_height="31dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/surname_user"
         />
     <TextView
@@ -61,6 +64,7 @@
         android:layout_width="375dp"
         android:layout_height="31dp"
         android:text="@string/bday_user"
+        android:layout_centerHorizontal="true"
         />
 
     <EditText  android:id="@+id/tb_name"
@@ -71,6 +75,7 @@
         android:layout_width="362dp"
         android:layout_height="49dp"
         android:paddingStart="15dp"
+        android:layout_centerHorizontal="true"
         />
     <EditText
         android:id="@+id/tb_surname"
@@ -81,6 +86,7 @@
         android:layout_width="362dp"
         android:layout_height="49dp"
         android:paddingStart="15dp"
+        android:layout_centerHorizontal="true"
         />
     <EditText
         android:id="@+id/tb_bday"
@@ -92,6 +98,7 @@
         android:layout_height="49dp"
         android:inputType="date"
         android:gravity="center"
+        android:layout_centerHorizontal="true"
         />
 
     <ImageButton android:id="@+id/tb_photo_user"
@@ -99,6 +106,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="410dp"
         android:layout_width="155dp"
+        android:layout_centerHorizontal="true"
         android:layout_height="155dp" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -112,6 +120,7 @@
         android:text="@string/save_txt"
         android:textColor="@color/white"
         android:textStyle="bold"
+        android:layout_centerHorizontal="true"
         android:textSize="12dp"
         />
 
