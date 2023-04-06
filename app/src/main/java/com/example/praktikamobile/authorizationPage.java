@@ -15,8 +15,11 @@ public class authorizationPage extends AppCompatActivity {
     }
     public void toNewActivity(View v)
     {
-        Intent i = new Intent(getApplicationContext(),settingPage.class);
+        Intent i = new Intent(getApplicationContext(),mainPage.class);
         startActivity(i);
-
+    }
+    public void toRegistrationPage (View v){
+        Intent i = new Intent(getApplicationContext(), registrationPage.class);
+        startActivity(i);
     }
 }

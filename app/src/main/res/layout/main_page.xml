@@ -77,16 +77,14 @@
         android:layout_height="49.06dp"
         android:elevation="20dp"
         />
-
-    <ScrollView
+    <GridView android:id="@+id/gridViewOoe"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TableLayout
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:gravity="center"
+        android:verticalSpacing="8dp"
 
-        </TableLayout>
-    </ScrollView>
+        android:stretchMode="columnWidth"/>
 
 
 

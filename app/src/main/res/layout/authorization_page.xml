@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+    >
     <TextView
         android:fontFamily="@font/nunito_medium"
         android:layout_gravity="center_horizontal|center"
@@ -54,8 +55,9 @@
         android:layout_width="362dp"
         android:layout_height="49dp"
         android:paddingStart="15dp"
+
         />
-    <TextView android:id="@+id/dont_have_acc"
+    <TextView android:id="@+id/have_acc"
         android:fontFamily="@font/nunito_medium"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal|center"
@@ -66,8 +68,9 @@
         android:layout_marginTop="450dp"
         android:layout_width="375dp"
         android:layout_height="31dp"
-        android:text="@string/already_register"
+        android:text="@string/not_account"
         android:layout_centerHorizontal="true"
+        android:onClick="toRegistrationPage"
         />
 
     <androidx.appcompat.widget.AppCompatButton
