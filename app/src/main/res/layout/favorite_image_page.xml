@@ -67,6 +67,7 @@
         android:layout_width="56.9dp"
         android:layout_height="49.06dp"
         android:elevation="20dp"
+        android:onClick="toMainPage"
         />
     <ImageButton
         android:id="@+id/btn_settings"
@@ -76,8 +77,9 @@
         android:layout_width="56.9dp"
         android:layout_height="49.06dp"
         android:elevation="20dp"
+        android:onClick="toSettingsPage"
         />
-    <GridView android:id="@+id/gridView"
+    <GridView android:id="@+id/gridViewFav"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:numColumns="3"
