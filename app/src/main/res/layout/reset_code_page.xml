@@ -46,6 +46,9 @@
         android:layout_height="70dp"
         android:gravity="center_horizontal"
         android:layout_centerHorizontal="true"
+        android:textSize="42dp"
+        android:layout_gravity="center"
+        android:inputType="number"
         />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -60,6 +63,7 @@
         android:textSize="14sp"
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
+        android:onClick="checkCode"
         />
 
 </RelativeLayout>
