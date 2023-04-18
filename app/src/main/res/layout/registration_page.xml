@@ -115,7 +115,7 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
-        android:onClick="toNewActivity"
+        android:onClick="registerAcc"
         />
 
     <TextView android:id="@+id/error_messages"
