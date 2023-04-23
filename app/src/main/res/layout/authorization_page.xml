@@ -84,7 +84,7 @@
         android:layout_centerHorizontal="true"
         android:textColor="@color/white"
         android:textSize="14sp"
-        android:onClick="toNewActivity"
+        android:onClick="authorization"
         />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/recover_passw"

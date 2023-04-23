@@ -26,9 +26,9 @@
         <activity android:name=".resetPassword_newp"/>
         <activity android:name=".resetCodePage"/>
         <activity android:name=".resetPasswordPage"/>
-        <activity android:name=".authorizationPage"/>
+        <activity android:name=".registrationPage"/>
         <activity
-            android:name=".registrationPage"
+            android:name=".authorizationPage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

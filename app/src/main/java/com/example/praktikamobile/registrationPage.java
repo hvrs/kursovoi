@@ -27,8 +27,6 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 public class registrationPage extends AppCompatActivity {
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
