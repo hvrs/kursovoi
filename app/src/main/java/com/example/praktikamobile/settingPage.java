@@ -23,4 +23,14 @@ public class settingPage extends AppCompatActivity{
         }
 
     }
+    public void toMainPage(View v)
+    {
+        Intent i = new Intent(getApplicationContext(),mainPage.class);
+        startActivity(i);
+    }
+    public void toFavspage(View v)
+    {
+        Intent i = new Intent(getApplicationContext(),favoritePage.class);
+        startActivity(i);
+    }
 }

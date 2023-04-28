@@ -41,5 +41,9 @@ public class mainPage extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(),settingPage.class);
         startActivity(i);
     }
+    public void toCamera(View v){
+        Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
+        startActivity(intent);
+    }
 
 }
