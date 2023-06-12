@@ -12,4 +12,5 @@ public class photoInfoPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.photo_info_page);
     }
+
 }

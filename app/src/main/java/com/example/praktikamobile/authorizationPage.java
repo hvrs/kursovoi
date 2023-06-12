@@ -58,6 +58,14 @@ public class authorizationPage extends AppCompatActivity {
         }
 
     }
+    @Override
+    public void onBackPressed() {
+
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
 
     public void toRegistrationPage (View v){
         Intent i = new Intent(getApplicationContext(), registrationPage.class);

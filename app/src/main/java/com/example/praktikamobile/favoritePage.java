@@ -36,4 +36,12 @@ public class favoritePage extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(),settingPage.class);
         startActivity(i);
     }
+    @Override
+    public void onBackPressed() {
+
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
 }

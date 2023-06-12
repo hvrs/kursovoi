@@ -13,4 +13,5 @@
     <color name="delete_button_color">#E34C4C</color>
     <color name="inputField_color">#f3f3f6</color>
     <color name="end_button_color">#5C9EDB</color>
+    <color name="spS_color">#7389DE</color>
 </resources>
