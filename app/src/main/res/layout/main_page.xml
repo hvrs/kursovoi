@@ -54,6 +54,8 @@
                 android:textColor="@color/white"
                 android:textSize="19sp"
                 android:layout_centerVertical="true"
+                android:onClick="openCameras"
+
 
                 />
             <androidx.appcompat.widget.AppCompatButton

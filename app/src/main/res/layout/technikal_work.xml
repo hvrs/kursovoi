@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spS_color"
+    >
+
+    <TextView
+        android:fontFamily="@font/nunito_medium"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:textSize="19sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="0dp"
+        android:layout_width="250dp"
+        android:layout_height="66dp"
+        android:text="@string/techinikal_workss"
+        android:elevation="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

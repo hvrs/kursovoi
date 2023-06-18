@@ -68,7 +68,7 @@
         android:layout_centerHorizontal="true"
         />
 
-    <EditText  android:id="@+id/tb_name"
+    <EditText  android:id="@+id/tb_nameE"
         android:background="@drawable/input_field"
         android:alpha="0.69999998807907"
         android:layout_marginStart="25dp"
@@ -79,7 +79,7 @@
         android:layout_centerHorizontal="true"
         />
     <EditText
-        android:id="@+id/tb_surname"
+        android:id="@+id/tb_surnameE"
         android:background="@drawable/input_field"
         android:alpha="0.69999998807907"
         android:layout_marginStart="25dp"
@@ -90,7 +90,7 @@
         android:layout_centerHorizontal="true"
         />
     <EditText
-        android:id="@+id/tb_bday"
+        android:id="@+id/tb_bdayY"
         android:background="@drawable/input_field"
         android:alpha="0.69999998807907"
         android:layout_marginStart="25dp"
@@ -125,6 +125,7 @@
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:textSize="12dp"
+        android:onClick="saveNewSettings"
         />
     <androidx.appcompat.widget.Toolbar
         android:layout_width="342dp"

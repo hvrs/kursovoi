@@ -1,5 +1,6 @@
 package com.example.praktikamobile;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
@@ -24,17 +25,26 @@ import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
+import java.io.File;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class mainPage extends AppCompatActivity {
     Button btnCam;
+    Bitmap photo;
+    ArrayList<Bitmap> mImages = new ArrayList<>();
+    final int TYPE_PHOTO = 1;
+    final int REQUEST_CODE_PHOTO = 1;
+    private static final int pic_id = 123;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);
 
-        ArrayList<Bitmap> mImages = new ArrayList<>();
+      //  ArrayList<Bitmap> mImages = new ArrayList<>();
         for (int i = 0; i < 80; i++){
             Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.ppj);
             mImages.add(bitmap);
@@ -43,6 +53,23 @@ public class mainPage extends AppCompatActivity {
         imageAdapter imageAdapter = new imageAdapter(this,mImages );
         gridView.setAdapter(imageAdapter);
 
+        btnCam = (Button) findViewById(R.id.btn_cameraStart);
+        btnCam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent camera_intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(camera_intent, pic_id);
+            }
+        });
+    }
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        super.onActivityResult(requestCode, resultCode, data);
+        photo = (Bitmap)data.getExtras().get("data");
+        mImages.add(photo);
+
+    }
+
+    public void openCameras(View view) {
 
     }
 
@@ -66,5 +93,6 @@ public class mainPage extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(),settingPage.class);
         startActivity(i);
     }
+
 
 }
