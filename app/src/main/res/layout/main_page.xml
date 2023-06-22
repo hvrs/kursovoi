@@ -24,14 +24,7 @@
         android:elevation="20dp"
         android:layout_centerHorizontal="true"
         />
-    <ImageView android:id="@+id/image_user"
-        android:src="@drawable/input_photo"
-        android:layout_marginStart="320dp"
-        android:layout_marginTop="6dp"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:elevation="20dp"
-        />
+
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="342dp"

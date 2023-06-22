@@ -71,7 +71,7 @@ public class registrationPage extends AppCompatActivity {
                             @Override
                             public void run() {
 
-                                Toast.makeText(getApplicationContext(), "Аккаунт с таким email-адрессом уже зарегистрирован!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Аккаунт с таким email-адрессом или логином уже зарегистрирован!", Toast.LENGTH_SHORT).show();
                             }
                         });
                     }

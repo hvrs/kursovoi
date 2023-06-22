@@ -93,14 +93,16 @@
         android:layout_centerHorizontal="true"
         />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/set_photo"
+    <ImageView
+        android:id="@+id/set_photoO"
         android:background="@drawable/input_photo"
         android:alpha="0.75"
         android:layout_marginStart="25dp"
         android:layout_marginTop="416dp"
         android:layout_width="155dp"
-        android:layout_height="155dp" />
+        android:layout_height="155dp"
+        android:onClick="SetMainPhoto"
+        />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/rect"
@@ -126,6 +128,7 @@
         android:textSize="14dp"
         android:layout_centerHorizontal="true"
         android:text="@string/letgo"
+        android:onClick="SaveSettings"
         />
 
 
