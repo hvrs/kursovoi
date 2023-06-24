@@ -101,21 +101,10 @@
         android:layout_marginTop="416dp"
         android:layout_width="155dp"
         android:layout_height="155dp"
+        android:layout_centerHorizontal="true"
         android:onClick="SetMainPhoto"
         />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/rect"
-        android:background="@drawable/btn_add"
-        android:layout_marginStart="261dp"
-        android:layout_marginTop="475dp"
-        android:layout_width="125.89dp"
-        android:layout_height="41.6dp"
-        android:text="@string/add_txt"
-        android:textColor="@color/white"
-        android:fontFamily="@font/nunito_medium"
-        android:textSize="12dp"
-        />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/__link_mainpage__btn_reg"
         android:background="@drawable/btn_register"

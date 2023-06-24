@@ -2,6 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+
     <View
         android:background="@drawable/top_panel"
         android:layout_marginStart="0dp"
@@ -42,7 +44,7 @@
                 android:layout_width="125dp"
                 android:layout_height="47dp"
                 android:background="@drawable/btn_camera_off"
-                android:text="Cam"
+                android:text="Cum"
                 android:fontFamily="@font/nunito_medium"
                 android:textColor="@color/white"
                 android:textSize="19sp"
@@ -92,16 +94,15 @@
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
-    <GridView android:id="@+id/gridViewOoe"
+    <GridView
+        android:id="@+id/gridView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:numColumns="3"
-        android:gravity="center"
-        android:verticalSpacing="8dp"
+        android:layout_height="773dp"
+        android:layout_alignParentTop="true"
 
-        android:stretchMode="columnWidth"/>
-
-
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="70dp"
+        />
 
 
 

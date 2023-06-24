@@ -26,6 +26,7 @@ public class splashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
 
+
     }
     @Override
     protected void onResume() {
@@ -41,6 +42,7 @@ public class splashScreen extends AppCompatActivity {
                 @Override
                 public void onResponse(Call call, Response response) throws IOException {
                     String responseBody = response.body().string();
+
 
                     if (!responseBody.equals("200")) {
                         Handler handler = new Handler(Looper.getMainLooper());

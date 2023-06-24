@@ -87,12 +87,13 @@
                 />
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
-    <GridView android:id="@+id/gridViewFav"
+    <GridView
+        android:id="@+id/gridView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:numColumns="3"
-        android:gravity="center"
-        android:verticalSpacing="8dp"
-        android:horizontalSpacing="5dp"
-        android:stretchMode="columnWidth"/>
+        android:layout_height="773dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="70dp"
+        />
 </RelativeLayout>

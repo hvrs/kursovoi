@@ -117,6 +117,8 @@ public static String Login;
             forAllfunction fAwl = new forAllfunction();
             fAwl.execute();
 
+            toMainPage();
+
             }
     } //какава)00)
     private class forAllfunction extends AsyncTask<Void, Void, String>{

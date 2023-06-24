@@ -80,7 +80,6 @@ public class registrationPage extends AppCompatActivity {
                         toStartSettingsPage(v);
                     }
                 }
-
                 @Override
                 public void onFailure(Call call, IOException e) {
                     String error = e.toString();

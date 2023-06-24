@@ -37,7 +37,7 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 public class settingPage extends AppCompatActivity{
-    ImageButton userPhoto;
+    ImageView userPhoto;
     private static final int REQUEST_SELECT_PHOTOS = 1;
     private static final int MAX_PHOTOS = 1;
     private List<String> selectedPhotos = new ArrayList<>();
@@ -57,7 +57,7 @@ public class settingPage extends AppCompatActivity{
      }
 
 
-     userPhoto = (ImageButton) findViewById(R.id.tb_photo_user);
+     userPhoto = (ImageView) findViewById(R.id.tb_photo_user);
 
      EditText tb_name = (EditText) findViewById(R.id.tb_nameE);
      EditText tb_surname = (EditText) findViewById(R.id.tb_surnameE);
@@ -89,7 +89,11 @@ public class settingPage extends AppCompatActivity{
                      @Override
                      public void run() { tb_name.setText(users[0].firstName);
                          tb_surname.setText(users[0].lastName);
-                         tb_bday.setText(users[0].bday); }
+                         tb_bday.setText(users[0].bday);
+                         String photoUri = "https://smtpservers.ru/projects/praktikaMobile/uploads/"+users[0].mainPhoto;
+                         Picasso.get().load(photoUri).into(userPhoto);
+                     }
+
                  });
 
 
@@ -237,6 +241,7 @@ public class settingPage extends AppCompatActivity{
         private String firstName;
         private String lastName;
         private String bday;
+        private String mainPhoto;
     }
 }
 

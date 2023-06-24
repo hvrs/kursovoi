@@ -102,14 +102,13 @@
         android:layout_centerHorizontal="true"
         />
 
-    <ImageButton android:id="@+id/tb_photo_user"
+    <ImageView android:id="@+id/tb_photo_user"
         android:src="@drawable/input_photo"
         android:layout_marginStart="25dp"
         android:layout_marginTop="410dp"
         android:layout_width="155dp"
         android:layout_centerHorizontal="true"
         android:layout_height="155dp"
-        android:onClick="uploadImage"
         />
 
     <androidx.appcompat.widget.AppCompatButton
