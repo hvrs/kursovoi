@@ -16,6 +16,7 @@ import android.os.Looper;
 import android.provider.MediaStore;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.GridView;
@@ -53,20 +54,40 @@ public class mainPage extends AppCompatActivity {
     private CustomGridAdapter mAdapter;
     private Boolean Upload = false;
     ArrayList<String> idList = new ArrayList<>();
+    public GridView gridView=null;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);
+        gridView = findViewById(R.id.gridView);
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Handler handler = new Handler(Looper.getMainLooper());
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        photoInfoPage.idPhoto = Integer.parseInt(idList.get(position));
+                        toPhotoInfoPage();
 
+                    }
+                });
+            }
+
+        });
+
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
         try {
             SQLiteDatabase db = getBaseContext().openOrCreateDatabase("users.db", MODE_PRIVATE, null);
             Cursor query = db.rawQuery("SELECT email FROM (SELECT * FROM users ORDER BY id DESC LIMIT 1) t ORDER BY id;", null);
             while(query.moveToNext()) {
-                email  = query.getString(0);}
-
-            GridView gridView = findViewById(R.id.gridView);
+                email  = query.getString(0);
+            }
             gridView.setAdapter(null);
             idList.clear();
             OkHttpClient client = new OkHttpClient();
@@ -83,7 +104,7 @@ public class mainPage extends AppCompatActivity {
                 @Override
                 public void onResponse(Call call, Response response) throws IOException {
                     String json = response.body().string();
-                    if (json.equals("500")) {
+                    if (json.equals("500\n")) {
                         Handler handler = new Handler(Looper.getMainLooper());
                         handler.post(new Runnable() {
                             @Override
@@ -116,13 +137,14 @@ public class mainPage extends AppCompatActivity {
                 public void onFailure(Call call, IOException e) {
                     String error = e.toString();
                 }
+
             });
         }
         catch (Exception e){
 
         }
-    }
 
+    }
 
     @Override
     public void onBackPressed() {
@@ -143,6 +165,11 @@ public class mainPage extends AppCompatActivity {
     {
         Intent i = new Intent(getApplicationContext(),settingPage.class);
         startActivity(i);
+    }
+    public void toPhotoInfoPage(){
+        Intent i = new Intent(getApplicationContext(),photoInfoPage.class);
+        startActivity(i);
+
     }
 
     public class Photos{

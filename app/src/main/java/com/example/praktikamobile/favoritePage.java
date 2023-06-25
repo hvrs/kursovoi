@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
 
@@ -37,14 +38,31 @@ public class favoritePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.favorite_image_page);
+        GridView gridView = findViewById(R.id.gridView);
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Handler handler = new Handler(Looper.getMainLooper());
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        photoInfoPage.idPhoto = Integer.parseInt(idList.get(position));
+                        toPhotoInfoPage();
+
+                    }
+                });
+            }
+
+
+        });
+
 
         try {
             SQLiteDatabase db = getBaseContext().openOrCreateDatabase("users.db", MODE_PRIVATE, null);
             Cursor query = db.rawQuery("SELECT email FROM (SELECT * FROM users ORDER BY id DESC LIMIT 1) t ORDER BY id;", null);
             while(query.moveToNext()) {
-                email  = query.getString(0);}
-
-            GridView gridView = findViewById(R.id.gridView);
+                email  = query.getString(0);
+            }
             gridView.setAdapter(null);
             idList.clear();
             OkHttpClient client = new OkHttpClient();
@@ -61,7 +79,7 @@ public class favoritePage extends AppCompatActivity {
                 @Override
                 public void onResponse(Call call, Response response) throws IOException {
                     String json = response.body().string();
-                    if (json.equals("500")) {
+                    if (json.equals("500\n")) {
                         Handler handler = new Handler(Looper.getMainLooper());
                         handler.post(new Runnable() {
                             @Override
@@ -114,6 +132,11 @@ public class favoritePage extends AppCompatActivity {
     }
     @Override
     public void onBackPressed() {
+
+    }
+    public void toPhotoInfoPage(){
+        Intent i = new Intent(getApplicationContext(),photoInfoPage.class);
+        startActivity(i);
 
     }
     @Override

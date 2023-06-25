@@ -23,8 +23,9 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:elevation="20dp"
+        android:onClick="goBackBtn"
         />
-    <ImageButton  android:id="@+id/rectangle_6"
+    <ImageView  android:id="@+id/imageView"
         android:background="@drawable/input_photo"
         android:layout_marginStart="35dp"
         android:layout_marginTop="111dp"
@@ -48,9 +49,9 @@
         android:textColor="@color/black"
         android:layout_marginLeft="135dp"
         android:layout_marginTop="453dp"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="20dp"
-        android:text="даТа"
+
         />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -64,8 +65,19 @@
         android:textColor="@color/white"
         android:fontFamily="@font/nunito_medium"
         android:textSize="14dp"
+        android:onClick="deletePhoto"
 />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/btn_small_panel_off"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="500dp"
+        android:layout_width="37dp"
+        android:layout_height="37.44dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/nunito_medium"
+        android:textSize="14dp"
+        />
 
 
 
