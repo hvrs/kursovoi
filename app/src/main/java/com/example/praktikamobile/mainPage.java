@@ -10,6 +10,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -34,27 +37,38 @@ import android.view.SurfaceView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
+import com.squareup.picasso.Picasso;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import okhttp3.Call;
 import okhttp3.Callback;
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import okhttp3.RequestBody;
 import okhttp3.Response;
 
 public class mainPage extends AppCompatActivity {
     private String email = null;
+
 
     private GridView mGridView;
     private CustomGridAdapter mAdapter;
     private Boolean Upload = false;
     ArrayList<String> idList = new ArrayList<>();
     public GridView gridView=null;
+    private List<String> selectedPhotos = new ArrayList<>();
+    private static final int REQUEST_SELECT_PHOTOS = 1;
+    private static final int MAX_PHOTOS = 1;
+    ImageView image = null;
 
 
     @Override
@@ -145,6 +159,12 @@ public class mainPage extends AppCompatActivity {
         }
 
     }
+    public void openCamera(View v){
+
+        formPhoto.emailUser = email;
+        Intent i = new Intent(getApplicationContext(),formPhoto.class);
+        startActivity(i);
+    }
 
     @Override
     public void onBackPressed() {
@@ -179,4 +199,5 @@ public class mainPage extends AppCompatActivity {
         private String isFav;
 
     }
+
 }

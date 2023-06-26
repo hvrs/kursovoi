@@ -68,15 +68,14 @@
         android:onClick="deletePhoto"
 />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:background="@drawable/btn_small_panel_off"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="500dp"
+    <ImageView
+        android:id="@+id/favoritIcon"
+        android:src="@drawable/fav_heart_off"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="485dp"
         android:layout_width="37dp"
-        android:layout_height="37.44dp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/nunito_medium"
-        android:textSize="14dp"
+        android:layout_height="37dp"
+        android:onClick="setFavorite"
         />
 
 

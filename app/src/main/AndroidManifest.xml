@@ -26,6 +26,7 @@
         <activity android:name=".favoritePage"/>
         <activity android:name=".technikalWorks"/>
         <activity android:name=".authorizationPage"/>
+        <activity android:name=".formPhoto"/>
         <activity android:name=".mainPage"/>
         <activity android:name=".photoInfoPage"/>
         <activity android:name=".settingPage"/>
