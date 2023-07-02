@@ -112,6 +112,12 @@ public class settingPage extends AppCompatActivity{
 
 
     }
+    public void openCameraS(View v){
+
+        formPhoto.emailUser = email;
+        Intent i = new Intent(getApplicationContext(),formPhoto.class);
+        startActivity(i);
+    }
     @Override
     public void onBackPressed() {
 

@@ -120,6 +120,12 @@ public class favoritePage extends AppCompatActivity {
 
 
     }
+    public void openCameraF(View v){
+        formPhoto.emailUser = email;
+        Intent i = new Intent(getApplicationContext(),formPhoto.class);
+        startActivity(i);
+    }
+
     public void toMainPage(View v)
     {
         Intent i = new Intent(getApplicationContext(),mainPage.class);

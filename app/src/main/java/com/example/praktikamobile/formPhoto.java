@@ -72,6 +72,17 @@ public class formPhoto extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.form_photo);}
+    public void toFavsPage(View v)
+    {
+        Intent i = new Intent(getApplicationContext(),favoritePage.class);
+        startActivity(i);
+    }
+    public void toSetPage(View v)
+    {
+        Intent i = new Intent(getApplicationContext(),settingPage.class);
+        startActivity(i);
+    }
+
 
 
     public void openCamera(View v){

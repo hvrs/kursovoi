@@ -80,14 +80,6 @@
         android:password="true"
         android:layout_centerHorizontal="true"
         />
-    <CheckBox
-        android:id="@+id/chb_showpassw"
-        android:layout_marginStart="350dp"
-        android:layout_marginTop="354dp"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:button="@drawable/eye"/>
-
     <TextView android:id="@+id/already_register"
         android:fontFamily="@font/nunito_medium"
         android:layout_gravity="center_horizontal|center"

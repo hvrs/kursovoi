@@ -78,7 +78,7 @@
                 android:textSize="19sp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="130dp"
-                android:onClick="toSettingsPage"
+                android:onClick="toSetPage"
                 />
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_gallery"
@@ -103,7 +103,7 @@
                 android:background="@drawable/btn_small_panel_off"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="251dp"
-                android:onClick="toFavspage"
+                android:onClick="toFavsPage"
                 />
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
